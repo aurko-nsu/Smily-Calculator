@@ -20,7 +20,7 @@
             </select>
             <input type="text" name="number2" placeholder="Number Two">
             <br>
-            <button type="submit"></button>
+            <button type="submit">Calculate</button>
         </form>
     </div>
 </body>
