@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/' , [Calculator::class , 'index'])->name('calculate');
-Route::post('/' , [Calculator::class , 'calculate']);
+Route::get('/calculator' , [Calculator::class , 'calculator']);
+Route::post('/doCalculate' , [Calculator::class , 'calculate'])->name('calculator.calculate');

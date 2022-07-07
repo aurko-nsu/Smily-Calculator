@@ -6,11 +6,8 @@
         <title>Smily Calculator</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/myCustom.css')}}">
     </head>
     <body>
-        <div id="app"></div>
-        <script src="{{ asset('js/app.js')}}"></script>
+        <h1>Chole eseche</h1>
     </body>
 </html>

@@ -2,14 +2,8 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-//Import v-from
-import { Errors, Form } from 'vform'
-window.Form = Form;
-Vue.component(Errors.name, Errors)
-Vue.component(Errors.name, Errors)
+Vue.component('calculate-component', require('./components/CalculateComponent.vue').default);
 
-//component
-//Vue.component('register-component', require('./components/RegisterComponent.vue').default);
 
 const app = new Vue({
     el: '#app',
