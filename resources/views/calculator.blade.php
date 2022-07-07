@@ -9,23 +9,23 @@
 </head>
 
 <body> 
-<div class="form_body">
-<p class="head_text">Emo Cal</p>
-<p class="instruction_text">Insert numbers, select symbol and hit Enter</p>
-<form method="POST" action="{{route('calculator.calculate')}}" enctype="multipart/form-data">
-    @csrf
-    <input type="number" name="number1" id="number1" placeholder="Number One">
-    <select name="operator" id="operator">
-        <option value="" selected></option>
-        <option value="+">&#128125;</option>
-        <option value="-">&#128128;</option>
-        <option value="*">&#128123;</option>
-        <option value="/">&#128561;</option>
-    </select>
-    <input type="number" name="number2" id="number2" placeholder="Number Two">
-    <br>
-    <button type="submit">Calculate</button>
-</form>
-</div>
+    <div class="form_body">
+        <p class="head_text">Emo Cal</p>
+        <p class="instruction_text">Insert numbers, select symbol and hit Enter</p>
+        <form method="POST" action="{{route('calculator.calculate')}}" enctype="multipart/form-data">
+            @csrf
+            <input type="number" name="number1" placeholder="Number One">
+            <select name="operator">
+                <option value="" selected></option>
+                <option value="+">&#128125;</option>
+                <option value="-">&#128128;</option>
+                <option value="*">&#128123;</option>
+                <option value="/">&#128561;</option>
+            </select>
+            <input type="number" name="number2" placeholder="Number Two">
+            <br>
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
 </body>
 </html>
