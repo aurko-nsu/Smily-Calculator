@@ -6,9 +6,23 @@
 
 This project has been developed with PHP Laravel(v.8) framework. A simple UI has been designed using CSS3 which includes two input field to insert two number(int) as operands and a dropdown menue to select the operator to do the mathematical operation. 
 
-- First a Route has been created for the landing page.
+- First a Route has been created for the landing page. calculator method from Calculator controlller has set as the root. The calculator view is generated here.
 ```
 Route::get('/' , [Calculator::class , 'calculator']);
+``` 
+- There are two input fields and a operator dropdown menue is available on the page to do the operation. The operators are symbolised as four different emoticon. After inserting two numbers in two different fields and selecting the operator, hit the Enter key from the keyboard.
+- Three values from the form will be posted to another method of Calculator controller where the main operation will be operated.
+```
+Route::post('/calculate' , [Calculator::class , 'calculate'])->name('calculator.calculate');
+``` 
+- Finally the operation details will be returned as JSON format.
+```
+return response()->json([
+            'Number 1' => $receivedData['number1'],
+            'Number 2' => $receivedData['number2'],
+            'Operator' => $operation,
+            'Result' => $receivedData['value']
+        ]);
 ``` 
 
 
