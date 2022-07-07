@@ -1,11 +1,22 @@
-<p align="center"><img src="https://github.com/aurko-nsu/emo-cal/blob/development/public/images/emo_cal_home.png" width="400"></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<img src="https://github.com/aurko-nsu/emo-cal/blob/development/public/images/emo_cal_home.png" width="600">
 </p>
+
+## Approach
+
+This project has been developed with PHP Laravel(v.8) framework. A simple UI has been designed using CSS3 which includes two input field to insert two number(int) as operands and a dropdown menue to select the operator to do the mathematical operation. 
+
+- First a Route has been created for the landing page.
+```
+Route::get('/' , [Calculator::class , 'calculator']);
+``` 
+
+
+
+
+
+
+
 
 ## About Laravel
 
