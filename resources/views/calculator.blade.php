@@ -9,6 +9,8 @@
 </head>
 
 <body> 
+<h2 class="head_text">Emoticon Calculator</h2>
+<p class="instruction_text">Insert numbers, select symbol and hit Enter key</p>
 <form method="POST" action="{{route('calculator.calculate')}}" enctype="multipart/form-data">
     @csrf
     <input type="number" name="number1" placeholder="Number One">
@@ -23,12 +25,5 @@
     <br>
     <button type="submit">Calculate</button>
 </form>
-
-@if(Session::has('calculated_value'))
-<h2>
-    {{Session::get('calculated_value')}}
-</h2>
-@endif
-
 </body>
 </html>
